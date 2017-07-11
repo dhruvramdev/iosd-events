@@ -21,12 +21,11 @@ layout: default
                   <div class="panel-body"><small>
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</small>
                     <!-- <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary btn-sm pull-right mt10">Read</a> -->
-                    <a href="#test-popup{{forloop.index}}" class="open-popup-link">Show inline popup</a>
+                    <a href="#test-popup{{forloop.index}}" class="open-popup-link btn btn-primary btn-sm pull-right mt10">More</a>
                   </div>
                   <div id="test-popup{{forloop.index}}" class="white-popup mfp-hide">
                       {{ post.content }}
                   </div>
-
                 </div>
                 
             </div>
