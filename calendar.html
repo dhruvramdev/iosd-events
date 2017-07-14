@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<ul class="nav nav-pills" role="tablist">
+  {% for college in site.colleges %}
+    
+    {% if forloop.index == 1 %}
+    <li class="nav-item active">
+    {% else %}
+    <li class="nav-item">
+    {% endif %}
+        <a class="nav-link" data-toggle="tab" href="#{{ forloop.index }}" role="tab" csv="{{college.calendar_csv}}" index="{{ forloop.index }}">{{college.title}}</a>
+        
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    {% for college in site.colleges %}
+        {% if forloop.index == 1 %}
+            <div class="tab-pane active" id="1" role="tabpanel">{{college.output}}</div>
+        {% else %}
+            <div class="tab-pane" id="{{forloop.index}}" role="tabpanel">{{college.output}}</div>
+        {% endif %}
+    {% endfor %}
+
+     
+ </div>
+
+
+<script>
+    $('.nav-item > a.nav-link').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+      
+    })
+</script>
+
+<!-- 
+        {% for calendar in site.colleges %}   
+
+            {{calendar}}   
+        
+        {% endfor %}
+ -->
