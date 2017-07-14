@@ -34,6 +34,12 @@ paginate_path: /page:num/
 # Tracker
 analytics: UA-83979019-1
 
+#Collections
+collections:
+  colleges:
+    title: colleges
+    output: true
+
 # Comments
 disqus-shortname: webjeda-demo
 
@@ -51,7 +57,6 @@ fb-page-title: webjeda
 # Sass style
 sass:
   style: compressed
-
 
 # Ruby Gems
 gems: [jekyll-paginate, jekyll-seo-tag]
