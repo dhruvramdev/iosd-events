@@ -3,8 +3,9 @@ layout: post
 title: "Discussion Forum"
 date: 2017-07-12
 ---
+![Discussion Forum](/iosd-events/assets/discussion_forum.jpg)
 
-#Discussion Forum
+# Discussion Forum
 Software Development doesn’t have that much
 literature to help us during errors, logical failures
 etc., github.com, stackoverflow.com and other online
