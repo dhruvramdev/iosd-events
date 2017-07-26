@@ -1,63 +1,66 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+---
+title: Webjeda cards
+timezone: UTC
 
-# Site settings
-title: Events
-email: contact@iosd.tech
-description: > # this means to ignore newlines until "baseurl:"
-  Webjeda Cards is a Bootstrap based jekyll theme for portfolio, photography or any kind of blog.
-  
-  
-  
-baseurl: "/iosd-events" # the subpath of your site, e.g. /blog
-url: "http://iosd.tech" # the base hostname & protocol for your site
 
-#sidebar
-default-image: webjeda-logo-big.jpg # If there is no featured image in a post then this image will be showed. Also on all pages this image will be showed. Use a 500x250 image.
-
-#footer
-built-by: dhruv
-copyright:
-   name: dhruv
-   link: 'http://dhruvramdev.me'
-
-# Build settings
-markdown: kramdown
-permalink: /:title/
-paginate: 9
-paginate_path: /page:num/
-
-# Tracker
-analytics: UA-83979019-1
-
-#Collections
 collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
   colleges:
     title: colleges
     output: true
 
-# Comments
+
+email: contact@iosd.tech
+description: 'Event Portal for IOSD'
+title: Events
+
+
+baseurl: "/iosd-events"
+url: http://iosd.tech
+
+
+
+default-image: webjeda-logo-big.jpg
+
+built-by: dhruv
+copyright:
+  name: dhruv
+  link: http://dhruvramdev.me
+
+
+markdown: kramdown
+
+permalink: "/:title/"
+paginate: 9
+paginate_path: "/page:num/"
+
+
+analytics: UA-83979019-1
+
 disqus-shortname: webjeda-demo
 
-#social
 facebook: http://facebook.com/webjeda
+
 quora: http://quora.com/sharathdt
+
 twitter: http://twitter.com/@webjeda
+
 github: http://github.com/webjeda
 
-#facebook like box
 fb-app-id: 549480635219583
 fb-page-url: https://www.facebook.com/webjeda/
 fb-page-title: webjeda
-
-# Sass style
 sass:
   style: compressed
 
-# Ruby Gems
-gems: [jekyll-paginate, jekyll-seo-tag, jekyll-admin]
 
+# Ruby Gems
+gems:
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-admin

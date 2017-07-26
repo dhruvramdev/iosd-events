@@ -1,13 +1,13 @@
 ---
+title: Mock Hackathons
+date: 2017-07-12 00:00:00 Z
 layout: post
-title: "Mock Hackathons"
-date: 2017-07-12
 img: mock_hackathons.JPG
-excerpt: Hackathons are events that give an industrial
-         environment for application development by
-         encouraging Developers to bring out their best
-         application in limited time period...
+excerpt: Hackathons are events that give an industrial environment for application
+  development by encouraging Developers to bring out their best application in limited
+  time period...
 ---
+
 ![Mock Hackathons]({{site.baseurl}}/images/mock_hackathons.JPG)
 
 # Mock Hackathons
